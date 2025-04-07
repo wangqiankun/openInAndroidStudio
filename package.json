@@ -1,23 +1,57 @@
 {
   "name": "openInAndroidStudio",
   "displayName": "open-in-android-studio",
-  "description": "Open File In Android Studio",
+  "description": "在 Android Studio 中打开当前文件或项目",
   "version": "0.0.1",
+  "publisher": "wangqiankun",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wangqiankun/openInAndroidStudio.git"
+  },
   "engines": {
     "vscode": "^1.99.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "keywords": [
+    "android",
+    "android-studio",
+    "open-file"
+  ],
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#C2E7FF",
+    "theme": "light"
+  },
+  "activationEvents": [
+    "onCommand:openInAndroidStudio.openFile",
+    "onStartupFinished"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "openInAndroidStudio.helloWorld",
-        "title": "Hello World"
+        "command": "openInAndroidStudio.openFile",
+        "title": "在 Android Studio 中打开"
       }
-    ]
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "openInAndroidStudio.openFile",
+          "group": "1_modification",
+          "when": "resourceExtname"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "openInAndroidStudio.openFile",
+          "group": "1_modification",
+          "when": "resourceExtname"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",

@@ -1,71 +1,64 @@
-# openInAndroidStudio README
+# Open in Android Studio
 
-This is the README for your extension "openInAndroidStudio". After writing up a brief description, we recommend including the following sections.
+一个简单的 VSCode 扩展，让你能够快速在 Android Studio 中打开当前文件或项目。
 
-## Features
+## 功能特点
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- 🚀 一键在 Android Studio 中打开当前文件
+- 📁 支持从文件资源管理器右键菜单打开
+- 📝 支持从编辑器右键菜单打开
+- 🎯 自动定位到指定文件位置
 
-For example if there is an image subfolder under your extension project workspace:
+## 安装方法
 
-\!\[feature X\]\(images/feature-x.png\)
+1. 打开 VSCode
+2. 按下 `Ctrl+Shift+X` (Windows/Linux) 或 `Cmd+Shift+X` (Mac) 打开扩展面板
+3. 搜索 "Open in Android Studio"
+4. 点击 "Install" 按钮安装扩展
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## 使用方法
 
-## Requirements
+### 从文件资源管理器打开
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. 在 VSCode 的文件资源管理器中右键点击任意文件
+2. 选择 "在 Android Studio 中打开" 选项
 
-## Extension Settings
+### 从编辑器打开
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+1. 在编辑器中右键点击
+2. 选择 "在 Android Studio 中打开" 选项
 
-For example:
+### 使用命令面板
 
-This extension contributes the following settings:
+1. 按下 `Ctrl+Shift+P` (Windows/Linux) 或 `Cmd+Shift+P` (Mac) 打开命令面板
+2. 输入 "在 Android Studio 中打开" 并选择该命令
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+## 系统要求
 
-## Known Issues
+- VSCode 1.99.0 或更高版本
+- Android Studio 已安装
+- macOS 操作系统（当前版本）
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+## 注意事项
 
-## Release Notes
+- 确保 Android Studio 已经正确安装在您的系统中
+- 确保已经打开了 VSCode 工作区
+- 如果遇到权限问题，请确保 Android Studio 有足够的权限访问项目文件
 
-Users appreciate release notes as you update your extension.
+## 问题反馈
 
-### 1.0.0
+如果您在使用过程中遇到任何问题，或有任何建议，欢迎在 GitHub 上提交 Issue：
 
-Initial release of ...
+[提交 Issue](https://github.com/wangqiankun/openInAndroidStudio/issues)
 
-### 1.0.1
+## 许可证
 
-Fixed issue #.
+MIT
 
-### 1.1.0
+## 更新日志
 
-Added features X, Y, and Z.
+### 0.0.1
 
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+- 初始版本发布
+- 支持在 Android Studio 中打开文件
+- 支持文件资源管理器和编辑器右键菜单
