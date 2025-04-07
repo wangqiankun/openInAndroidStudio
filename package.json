@@ -2,14 +2,14 @@
   "name": "openInAndroidStudio",
   "displayName": "open-in-android-studio",
   "description": "在 Android Studio 中打开当前文件或项目",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "publisher": "wangqiankun",
   "repository": {
     "type": "git",
     "url": "https://github.com/wangqiankun/openInAndroidStudio.git"
   },
   "engines": {
-    "vscode": "*"
+    "vscode": "^1.96.0"
   },
   "categories": [
     "Other"
@@ -33,7 +33,7 @@
     "commands": [
       {
         "command": "openInAndroidStudio.openFile",
-        "title": "在 Android Studio 中打开"
+        "title": "open in Android Studio"
       }
     ],
     "menus": {
@@ -62,7 +62,7 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "*",
+    "@types/vscode": "^1.96.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
     "@typescript-eslint/eslint-plugin": "^8.28.0",

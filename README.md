@@ -1,64 +1,75 @@
 # Open in Android Studio
 
-一个简单的 VSCode 扩展，让你能够快速在 Android Studio 中打开当前文件或项目。
+A simple VSCode extension that allows you to quickly open current files or projects in Android Studio.
 
-## 功能特点
+## Important Notes
+Please test if the `studio` command is available in your terminal first.
 
-- 🚀 一键在 Android Studio 中打开当前文件
-- 📁 支持从文件资源管理器右键菜单打开
-- 📝 支持从编辑器右键菜单打开
-- 🎯 自动定位到指定文件位置
+## Features
 
-## 安装方法
+- 🚀 One-click to open current file in Android Studio
+- 📁 Support opening from file explorer context menu
+- 📝 Support opening from editor context menu
+- 🎯 Automatically navigate to the specified file
 
-1. 打开 VSCode
-2. 按下 `Ctrl+Shift+X` (Windows/Linux) 或 `Cmd+Shift+X` (Mac) 打开扩展面板
-3. 搜索 "Open in Android Studio"
-4. 点击 "Install" 按钮安装扩展
+## Installation
 
-## 使用方法
+1. Open VSCode
+2. Press `Ctrl+Shift+X` (Windows/Linux) or `Cmd+Shift+X` (Mac) to open the Extensions panel
+3. Search for "Open in Android Studio"
+4. Click the "Install" button to install the extension
 
-### 从文件资源管理器打开
+## Usage
 
-1. 在 VSCode 的文件资源管理器中右键点击任意文件
-2. 选择 "在 Android Studio 中打开" 选项
+### Open from File Explorer
 
-### 从编辑器打开
+1. Right-click on any file in the VSCode file explorer
+2. Select "Open in Android Studio" option
 
-1. 在编辑器中右键点击
-2. 选择 "在 Android Studio 中打开" 选项
+### Open from Editor
 
-### 使用命令面板
+1. Right-click in the editor
+2. Select "Open in Android Studio" option
 
-1. 按下 `Ctrl+Shift+P` (Windows/Linux) 或 `Cmd+Shift+P` (Mac) 打开命令面板
-2. 输入 "在 Android Studio 中打开" 并选择该命令
+### Using Command Palette
 
-## 系统要求
+1. Press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (Mac) to open the Command Palette
+2. Type "Open in Android Studio" and select the command
 
-- VSCode 1.99.0 或更高版本
-- Android Studio 已安装
-- macOS 操作系统（当前版本）
+## System Requirements
 
-## 注意事项
+- VSCode 1.96.0 or higher
+- Android Studio installed
+- macOS operating system (current version)
 
-- 确保 Android Studio 已经正确安装在您的系统中
-- 确保已经打开了 VSCode 工作区
-- 如果遇到权限问题，请确保 Android Studio 有足够的权限访问项目文件
+## Important Notes
 
-## 问题反馈
+- Ensure Android Studio is properly installed on your system
+- Make sure you have opened a VSCode workspace
+- If you encounter permission issues, ensure Android Studio has sufficient permissions to access project files
 
-如果您在使用过程中遇到任何问题，或有任何建议，欢迎在 GitHub 上提交 Issue：
+## Feedback
 
-[提交 Issue](https://github.com/wangqiankun/openInAndroidStudio/issues)
+If you encounter any issues or have suggestions while using this extension, please submit an Issue on GitHub:
 
-## 许可证
+[Submit Issue](https://github.com/wangqiankun/openInAndroidStudio/issues)
+
+## License
 
 MIT
 
-## 更新日志
+## Build Commands
 
-### 0.0.1
+```bash
+# Clean and reinstall dependencies
+rm -rf node_modules package-lock.json out && npm install 
 
-- 初始版本发布
-- 支持在 Android Studio 中打开文件
-- 支持文件资源管理器和编辑器右键菜单
+# Compile
+npm run compile
+
+# Package
+vsce package
+
+# Publish
+vsce publish
+``` 
